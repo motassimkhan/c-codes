@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "corecrt_wstdio.h": "c",
+        "stdio.h": "c",
+        "Customer Biling System.C": "cpp",
+        "string.h": "c",
+        "stdlib.h": "c"
+    }
+}

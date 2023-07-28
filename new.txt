@@ -1,0 +1,1 @@
+this is a sample file to print entered number of records from a file
