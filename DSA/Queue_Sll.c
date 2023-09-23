@@ -6,7 +6,7 @@ struct node{
     struct node *next;
 };
 struct node *start=NULL, *end = NULL;
-void enqueue(){
+void insert(){
     struct node *newnode = (struct node*) malloc(sizeof(struct node));
     int ele;
     printf("Enter element:");
@@ -22,7 +22,7 @@ void enqueue(){
     end = newnode;
 }
 
-void dequeue(){
+void delete(){
     if (start == NULL){
         printf("\nQueue Underflow\n");
         return;
@@ -50,14 +50,13 @@ void display(){
 }
 void main(){
     int ch;
-    system("cls");
     printf("Enter number of elements: ");
     scanf("%d",&ch);
     for (int i=0; i<ch; i++){
-        enqueue();
+        insert();
     }
     display();
     printf("\nAfter removing element:");
-    dequeue();
+    delete();
     display();
 }

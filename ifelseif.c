@@ -1,12 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
 
- #include <stdio.h>
+typedef struct node
+{
+    struct node* left;
+    int num;
+    struct node* right;
+}node;
+
+node* findMin(node *root){
+    node* current = root;
+    if(current == NULL) return -1;
+   while (current->left != NULL)
+   {
+        current = current->left;
+   }
+        return current->num;
+}
+
+node* findMax(node *root){
+    node* current = root;
+    if(current == NULL) return -1;
+   while (current->right != NULL)
+   {
+        current = current->right;
+   }
+        return current->num;
+}
+
+
+
 int main()
-{   
-    int a= 0;
-    scanf("%d",&a);
-    if (a == 0 ) printf("Zero");
-    else if (a == 1 ) printf("Zerdo");
-    else if (a == 5 ) printf("Zergo");
-    else printf("Error");
-    return 0;
+{
+    
 }
